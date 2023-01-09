@@ -1,6 +1,7 @@
 package com.velocity;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListDemo {
@@ -15,9 +16,11 @@ public class ArrayListDemo {
 		
 		//System.out.println(list);
 		
-		for(String s: list) {
-			System.out.println(s);
+		Iterator<String> itr = list.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr);
 		}
+		
 	}
 
 }
